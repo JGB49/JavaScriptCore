@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<div style="margin-top: 100px">
+    <h1>JS+web交互的那些事</h1>
+    </div>
+<div>
+	<p id="p1">p1</p>	
+</div>
+<div>
+	<!-- 触发Object-c代码 -->
+	<input type="button" value="Objectc" onclick="gb.callObjectc()">
+	<!-- 出发js代码 ->Native Json传参 -->
+	<input type="button" value="json" onclick="callJson()">
+	<!-- 出发js代码 ->Native array传参 -->
+	<input type="button" value="array" onclick="callArray()">
+</div>
+
+<script type="text/javascript">
+	
+	var callJson = function(){
+		var jsondata = JSON.stringify({"titile":"标题","desc":"内容","url":"http://baidu.com"});
+        // oc JSExport 代理方法一致
+		gb.getJson(jsondata);
+	}
+
+	var callArray = function(){
+		var carArray = new Array("BMW-3-Class","BMW-4-Class","BMW-5-Class");
+        // oc JSExport 代理方法一致
+		gb.getArray(carArray);
+	}
+
+	var picCallp = function(p) {
+	document.getElementById("p1").innerHTML=p;
+
+}
+
+
+
+
+</script>
+	
+</body>
+
+</html>

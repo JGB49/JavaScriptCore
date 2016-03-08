@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  JSWebViewController.h
 //  JavaScriptCoreDemo
 //
 //  Created by jinguangbi on 16/3/8.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface JSWebViewController : UIViewController
 
 @end
-

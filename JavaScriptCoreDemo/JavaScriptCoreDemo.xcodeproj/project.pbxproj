@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		0DE63C5B1C8ECF16000A539C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE63C5A1C8ECF16000A539C /* main.m */; };
 		0DE63C5E1C8ECF16000A539C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE63C5D1C8ECF16000A539C /* AppDelegate.m */; };
-		0DE63C611C8ECF16000A539C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE63C601C8ECF16000A539C /* ViewController.m */; };
 		0DE63C641C8ECF16000A539C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DE63C621C8ECF16000A539C /* Main.storyboard */; };
 		0DE63C661C8ECF16000A539C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DE63C651C8ECF16000A539C /* Assets.xcassets */; };
 		0DE63C691C8ECF16000A539C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DE63C671C8ECF16000A539C /* LaunchScreen.storyboard */; };
 		0DE63C741C8ECF16000A539C /* JavaScriptCoreDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE63C731C8ECF16000A539C /* JavaScriptCoreDemoTests.m */; };
 		0DE63C7F1C8ECF16000A539C /* JavaScriptCoreDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE63C7E1C8ECF16000A539C /* JavaScriptCoreDemoUITests.m */; };
+		0DE63C8F1C8ED1F1000A539C /* JSWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE63C8D1C8ED1F1000A539C /* JSWebViewController.m */; };
+		0DE63C901C8ED1F1000A539C /* JSWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DE63C8E1C8ED1F1000A539C /* JSWebViewController.xib */; };
+		0DE63C921C8ED2D3000A539C /* demo.html in Resources */ = {isa = PBXBuildFile; fileRef = 0DE63C911C8ED2D2000A539C /* demo.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +41,6 @@
 		0DE63C5A1C8ECF16000A539C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0DE63C5C1C8ECF16000A539C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0DE63C5D1C8ECF16000A539C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0DE63C5F1C8ECF16000A539C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0DE63C601C8ECF16000A539C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0DE63C631C8ECF16000A539C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0DE63C651C8ECF16000A539C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0DE63C681C8ECF16000A539C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +51,10 @@
 		0DE63C7A1C8ECF16000A539C /* JavaScriptCoreDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JavaScriptCoreDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DE63C7E1C8ECF16000A539C /* JavaScriptCoreDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JavaScriptCoreDemoUITests.m; sourceTree = "<group>"; };
 		0DE63C801C8ECF16000A539C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DE63C8C1C8ED1F1000A539C /* JSWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSWebViewController.h; sourceTree = "<group>"; };
+		0DE63C8D1C8ED1F1000A539C /* JSWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSWebViewController.m; sourceTree = "<group>"; };
+		0DE63C8E1C8ED1F1000A539C /* JSWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JSWebViewController.xib; sourceTree = "<group>"; };
+		0DE63C911C8ED2D2000A539C /* demo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = demo.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +105,12 @@
 		0DE63C581C8ECF16000A539C /* JavaScriptCoreDemo */ = {
 			isa = PBXGroup;
 			children = (
+				0DE63C911C8ED2D2000A539C /* demo.html */,
 				0DE63C5C1C8ECF16000A539C /* AppDelegate.h */,
 				0DE63C5D1C8ECF16000A539C /* AppDelegate.m */,
-				0DE63C5F1C8ECF16000A539C /* ViewController.h */,
-				0DE63C601C8ECF16000A539C /* ViewController.m */,
+				0DE63C8C1C8ED1F1000A539C /* JSWebViewController.h */,
+				0DE63C8D1C8ED1F1000A539C /* JSWebViewController.m */,
+				0DE63C8E1C8ED1F1000A539C /* JSWebViewController.xib */,
 				0DE63C621C8ECF16000A539C /* Main.storyboard */,
 				0DE63C651C8ECF16000A539C /* Assets.xcassets */,
 				0DE63C671C8ECF16000A539C /* LaunchScreen.storyboard */,
@@ -245,7 +251,9 @@
 			files = (
 				0DE63C691C8ECF16000A539C /* LaunchScreen.storyboard in Resources */,
 				0DE63C661C8ECF16000A539C /* Assets.xcassets in Resources */,
+				0DE63C901C8ED1F1000A539C /* JSWebViewController.xib in Resources */,
 				0DE63C641C8ECF16000A539C /* Main.storyboard in Resources */,
+				0DE63C921C8ED2D3000A539C /* demo.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,8 +278,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DE63C611C8ECF16000A539C /* ViewController.m in Sources */,
 				0DE63C5E1C8ECF16000A539C /* AppDelegate.m in Sources */,
+				0DE63C8F1C8ED1F1000A539C /* JSWebViewController.m in Sources */,
 				0DE63C5B1C8ECF16000A539C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +420,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JavaScriptCoreDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = condenast.JavaScriptCoreDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -423,6 +432,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JavaScriptCoreDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = condenast.JavaScriptCoreDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -496,6 +506,7 @@
 				0DE63C851C8ECF16000A539C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0DE63C861C8ECF16000A539C /* Build configuration list for PBXNativeTarget "JavaScriptCoreDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +515,7 @@
 				0DE63C881C8ECF16000A539C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0DE63C891C8ECF16000A539C /* Build configuration list for PBXNativeTarget "JavaScriptCoreDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +524,7 @@
 				0DE63C8B1C8ECF16000A539C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
